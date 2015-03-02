@@ -1,0 +1,25 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import "FMDB.h"
+#import "DXAlertView.h"
+#import "AHKActionSheet.h"
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+#define kMainScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define kMainScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define noDisableVerticalScrollTag 836913
+#define noDisableHorizontalScrollTag 836914
+#define kEncodeKey @"diaryModelEncode"
+#define kWriteDaydateFormat @"yyyy/MM/dd"
+#define kDoodleDateFormat @"yyyy/MM/dd HH:mm:ss"
